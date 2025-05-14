@@ -1,5 +1,4 @@
 using Main.Scripts.Infrastructure.Factory;
-using Main.Scripts.Infrastructure.States;
 using Zenject;
 
 public class ProjectInstaller : MonoInstaller
@@ -8,6 +7,5 @@ public class ProjectInstaller : MonoInstaller
     {
         //Инпут сервис 
 
-        this.Container.Bind<IGameFactory>().To<GameFactory>().AsSingle();
     }
 }
