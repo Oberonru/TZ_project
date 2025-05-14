@@ -308,14 +308,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'Right_ThumbIntermediate'\n\tTransform 'Left_IndexProximal'\n\tTransform
-    'Right_IndexProximal'\n\tTransform 'Right_MiddleIntermediate'\n\tTransform 'Left_LowerArm'\n\tTransform
-    'Left_PinkyDistal'\n\tTransform 'Left_RingIntermediate'\n\tTransform 'Chest'\n\tTransform
-    'Right_ThumbDistal'\n\tTransform 'Right_IndexIntermediate'\n\tand more ...\n\tFrom
-    animation clip 'mixamo.com'\n\tFrom animation clip 'Running'\n\tFrom animation
-    clip 'Jump'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -490,6 +483,8 @@ GameObject:
   - component: {fileID: 8123908712158900272}
   - component: {fileID: 7871419369694832158}
   - component: {fileID: 8844465382139117469}
+  - component: {fileID: 1536802123130796989}
+  - component: {fileID: -3220046412984199018}
   m_Layer: 8
   m_Name: Player_prefab
   m_TagString: Untagged
@@ -522,7 +517,7 @@ Rigidbody:
   m_GameObject: {fileID: 2136119621745000156}
   serializedVersion: 4
   m_Mass: 70
-  m_Drag: 0
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -538,7 +533,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 88
   m_CollisionDetection: 0
 --- !u!65 &8844465382139117469
 BoxCollider:
@@ -547,7 +542,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136119621745000156}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d7fdb8e1ea2d8428e90b77123af1055e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -561,6 +556,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.23468053, y: 1.760628, z: 0.38259554}
   m_Center: {x: 0, y: -0.17, z: 0}
+--- !u!114 &1536802123130796989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136119621745000156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e505aa0f3845e59c06bf8c80bf0c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 300
+  speed: 25
+  friction: 0.1
+--- !u!75 &-3220046412984199018
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136119621745000156}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &2365263930156849199
 GameObject:
   m_ObjectHideFlags: 0
