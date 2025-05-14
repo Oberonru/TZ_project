@@ -10,9 +10,10 @@ namespace Main.Scripts.Infrastructure.Factory
             return Object.Instantiate(prefab);
         }
 
-        public GameObject CreateGameObjectInPoint(string path, Vector3 initialPoint)
+        public GameObject CreateGameObjectInPoint(string path, Transform initialPoint)
         {
-            throw new System.NotImplementedException();
+            var prefab = Resources.Load<GameObject>(path);
+            return Object.Instantiate(prefab, initialPoint);
         }
     }
 }
