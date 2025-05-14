@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94f0ae4f-79c3-41c4-b161-5a2a3011ba78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Infrastructure/Factory/GameFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Infrastructure/Factory/GameFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Infrastructure/Factory/IGameFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Infrastructure/Factory/IGameFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Infrastructure/Installers/GameplayInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Infrastructure/Installers/GameplayInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Services.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Services/IService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Services/IService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TZ_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TZ_project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/FbxFile/PlayerArmature.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/FbxFile/PlayerArmature.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/PlayerArmature.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/PlayerArmature.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Player_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/Player_prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Points/InitialPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Points/InitialPoint.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test_scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test_scene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +20,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Oberonru"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Oberonru&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Oberonru/TZ_project.git",
-    "accountId": "ac979493-7dcb-4d52-b329-ab1b9c2018c9"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Oberonru/TZ_project.git&quot;,
+    &quot;accountId&quot;: &quot;ac979493-7dcb-4d52-b329-ab1b9c2018c9&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Main/Scripts/Infrastructure/Factory/GameFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Main/Scripts/Infrastructure/Factory/IGameFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Main/Scripts/Infrastructure/States/GameBootstrap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Others/StarterAssets/InputSystem/CustomeInputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Resources/Player/Player_prefab.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Scenes/Test_scene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Scenes/Test_scene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Settings/URP-Balanced.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/Assets/Settings/URP-HighFidelity.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.formats.fbx@db39de05b0db/Editor/FbxExporter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexey/dev/Unity/TZ_project/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -52,19 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../6000.0.36f1/Unity.app/Contents/MacOS/Unity" />
@@ -119,6 +128,31 @@
       <updated>1747113921298</updated>
       <workItem from="1747114952371" duration="2299000" />
     </task>
+    <task id="LOCAL-00001" summary="Create player animator">
+      <option name="closed" value="true" />
+      <created>1747193301875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747193301875</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add initial point to spawn player">
+      <option name="closed" value="true" />
+      <created>1747196150885</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747196150885</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial point">
+      <option name="closed" value="true" />
+      <created>1747196185876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747196185876</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,5 +168,9 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Create player animator" />
+    <MESSAGE value="Add initial point to spawn player" />
+    <MESSAGE value="Initial point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial point" />
   </component>
 </project>
