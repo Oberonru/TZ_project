@@ -10,10 +10,10 @@ namespace Main.Scripts.Infrastructure.Factory
             return Object.Instantiate(prefab);
         }
 
-        public GameObject CreateGameObjectInPoint(string path, Transform initialPoint)
+        public GameObject CreateGameObjectInPoint(string path, Vector3 initialPoint)
         {
             var prefab = Resources.Load<GameObject>(path);
-            return Object.Instantiate(prefab, initialPoint);
+            return Object.Instantiate(prefab, initialPoint, Quaternion.identity);
         }
     }
 }
