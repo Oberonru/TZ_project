@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94f0ae4f-79c3-41c4-b161-5a2a3011ba78" name="Changes" comment="Edit initial spawn point">
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/AnimationType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/AnimationType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/Logic.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/Logic/CurrenAnimatorStateReporter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/Logic/CurrenAnimatorStateReporter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/Logic/IAnimationStateReader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/Logic/IAnimationStateReader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/PlayerAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Animators/PlayerAnimator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Gameplay/Player/AnimationHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Gameplay/Player/AnimationHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TZ_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TZ_project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Jump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Jump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerArmature.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerArmature.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Main/Scripts/Gameplay/Player/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main/Scripts/Gameplay/Player/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/Player_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/Player_prefab.prefab" afterDir="false" />
+    <list default="true" id="94f0ae4f-79c3-41c4-b161-5a2a3011ba78" name="Changes" comment="Create animation prototype">
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747113921298</updated>
       <workItem from="1747114952371" duration="2299000" />
-      <workItem from="1747213768433" duration="10754000" />
+      <workItem from="1747213768433" duration="11158000" />
     </task>
     <task id="LOCAL-00001" summary="Create player animator">
       <option name="closed" value="true" />
@@ -196,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747220698837</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create animation prototype">
+      <option name="closed" value="true" />
+      <created>1747229332644</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747229332644</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +209,7 @@
     <MESSAGE value="Fix Animator issues" />
     <MESSAGE value="Create player move, jump methods" />
     <MESSAGE value="Edit initial spawn point" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit initial spawn point" />
+    <MESSAGE value="Create animation prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create animation prototype" />
   </component>
 </project>
