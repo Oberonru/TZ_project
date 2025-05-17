@@ -1,3 +1,4 @@
+using Main.Scripts.Infrastructure.Services.InputService;
 using UnityEngine;
 
 namespace Main.Scripts.Gameplay.Player
@@ -9,13 +10,19 @@ namespace Main.Scripts.Gameplay.Player
         public float gravity = -9.81f;
         private float _verticalVelocity = 0f;
         private CharacterController _characterController;
-        private float _horizontal;
         private bool _isGround;
         private Vector3 _move;
+        private IInputService _inputService;
+        private float _horizontal;
 
         private void Start()
         {
             _characterController = GetComponent<CharacterController>();
+        }
+
+        public void Init(IInputService inputService)
+        {
+            _inputService = inputService;
         }
 
         private void FixedUpdate()
@@ -25,14 +32,15 @@ namespace Main.Scripts.Gameplay.Player
 
         private void Update()
         {
-            _horizontal = Input.GetAxis("Horizontal");
-             _move = new Vector3(_horizontal, 0, 0) * speed;
+            _horizontal = _inputService.Axis().x;
+            
+            _move = new Vector3(_horizontal, 0, 0) * speed;
 
             RevertToSpeedDirection();
-           
+
             if (_isGround)
             {
-                if (Input.GetButtonDown("Jump"))
+                if (_inputService.Jump())
                     _verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
                 else
                     _verticalVelocity = -1f;
@@ -46,22 +54,23 @@ namespace Main.Scripts.Gameplay.Player
 
             _characterController.Move(_move * Time.deltaTime);
         }
-        
+
         private void Rotate(int angle)
         {
             var eulerAngle = Quaternion.Euler(0, angle, 0);
             transform.rotation = eulerAngle;
         }
-        
+
         private void RevertToSpeedDirection()
         {
-            if (_horizontal < 0)
+            switch (_horizontal)
             {
-                Rotate(-90);
-            }
-            else if (_horizontal > 0)
-            {
-                Rotate(90);
+                case < 0:
+                    Rotate(-90);
+                    break;
+                case > 0:
+                    Rotate(90);
+                    break;
             }
         }
 
@@ -69,6 +78,5 @@ namespace Main.Scripts.Gameplay.Player
         {
             return _characterController.isGrounded;
         }
-        
     }
 }
