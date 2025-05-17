@@ -11,12 +11,18 @@ namespace Main.Scripts.Animators
         
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
         private static readonly int Jump = Animator.StringToHash("Jump");
+        private static readonly int Walk = Animator.StringToHash("Walk");
 
         private readonly int _movingHash = Animator.StringToHash("Running");
         private readonly int _jumpHash = Animator.StringToHash("Jumping");
 
         private event Action<AnimationType> EnterType;
         private event Action<AnimationType> ExitType;
+
+        private void Update()
+        {
+            //Animator.SetFloat(Walk, playerRb.linearVelocity.magnitude, 0.1f, Time.deltaTime);
+        }
 
         public void PlayMoving(float speed)
         {
