@@ -14,8 +14,7 @@ namespace Main.Scripts.UI
             restart.onClick.AddListener(RestartGame);
             exit.onClick.AddListener(ExitGame);
         }
-
-
+        
         private void RestartGame()
         {
             SceneManager.LoadSceneAsync("Test_scene");

@@ -10,12 +10,15 @@ namespace Main.Scripts.Logic
         private void Start()
         {
             winUi.SetActive(false);
+            print("false active");
         }
 
         private void OnTriggerEnter(Collider other)
         {
+            
             if (other.TryGetComponent<PlayerMove>(out var move))
             {
+                print("Trigger enter");
                 winUi.SetActive(true);
             }
         }
