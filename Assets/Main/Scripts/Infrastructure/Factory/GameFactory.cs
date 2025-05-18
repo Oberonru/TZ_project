@@ -13,7 +13,7 @@ namespace Main.Scripts.Infrastructure.Factory
         public GameObject CreateGameObjectInPoint(string path, Vector3 initialPoint)
         {
             var prefab = Resources.Load<GameObject>(path);
-            return Object.Instantiate(prefab, initialPoint, Quaternion.identity);
+            return Object.Instantiate(prefab, initialPoint, Quaternion.Euler(new Vector3(0, 90, 0)));
         }
     }
 }

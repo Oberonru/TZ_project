@@ -4,11 +4,9 @@ namespace Main.Scripts.Camera
 {
     public class CameraLogic : MonoBehaviour
     {
-        
             public float RotationAngleX;
             public int Distance;
             public float OffsetY;
-
 
             [SerializeField] private Transform _following;
 
@@ -20,6 +18,7 @@ namespace Main.Scripts.Camera
                 Vector3 position = rotation * new Vector3(0, 0, -Distance) + FollowingPointPosition();
                 transform.rotation = rotation;
                 transform.position = position;
+                //transform.position = _following.transform.position;
             }
 
             public void Follow(GameObject following)

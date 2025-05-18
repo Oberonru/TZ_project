@@ -2,21 +2,21 @@ using Main.Scripts.Camera;
 using Main.Scripts.Gameplay.Player;
 using Main.Scripts.Infrastructure.Factory;
 using Main.Scripts.Infrastructure.Services.InputService;
-using Unity.VisualScripting;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace Main.Scripts.Infrastructure.States
 {
     public class GameBootstrap : MonoBehaviour
     {
-        private string InputServicePath = "Player/InputService";
-
+        public CinemachineVirtualCamera virtualCamera;
         public UnityEngine.Camera mainCamera;
         public GameObject InitialPoint;
+
         private GameFactory _gameFactory;
-        private string _playerPath = "Player/Player_prefab";
+        private string _playerPath = "Player/Player";
         private string _uiPath = "UI/Canvas_game";
-        private CameraLogic _cameraLogic;
+        private string InputServicePath = "Player/InputService";
 
         private void Start()
         {
@@ -29,12 +29,12 @@ namespace Main.Scripts.Infrastructure.States
 
             player.GetComponentInChildren<PlayerMove>().Init(inputService.GetComponent<InputService>());
 
-            var ui = _gameFactory.CreateGameObject(_uiPath);
-            _cameraLogic = mainCamera.GetComponent<CameraLogic>();
-            
+            _gameFactory.CreateGameObject(_uiPath);
+
+            //virtualCamera.Follow = player.transform;
+
             CameraFollow(player);
         }
-
 
         private void CameraFollow(GameObject target)
         {

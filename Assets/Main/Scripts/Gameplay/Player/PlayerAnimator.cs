@@ -7,6 +7,7 @@ namespace Main.Scripts.Animators
     public class PlayerAnimator : MonoBehaviour, IAnimationStateReader
     {
         public Animator Animator;
+        public CharacterController characterController;
         public AnimationType AnimationType { get; private set; }
         
         private static readonly int IsMoving = Animator.StringToHash("IsMoving");
@@ -21,7 +22,7 @@ namespace Main.Scripts.Animators
 
         private void Update()
         {
-            //Animator.SetFloat(Walk, playerRb.linearVelocity.magnitude, 0.1f, Time.deltaTime);
+            Animator.SetFloat(Walk, characterController.velocity.magnitude, 0.1f, Time.deltaTime);
         }
 
         public void PlayMoving(float speed)
