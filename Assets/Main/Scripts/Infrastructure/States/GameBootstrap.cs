@@ -30,9 +30,7 @@ namespace Main.Scripts.Infrastructure.States
             player.GetComponentInChildren<PlayerMove>().Init(inputService.GetComponent<InputService>());
 
             _gameFactory.CreateGameObject(_uiPath);
-
-            //virtualCamera.Follow = player.transform;
-
+            
             CameraFollow(player);
         }
 

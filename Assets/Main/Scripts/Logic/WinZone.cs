@@ -10,7 +10,6 @@ namespace Main.Scripts.Logic
         private void Start()
         {
             winUi.SetActive(false);
-            print("false active");
         }
 
         private void OnTriggerEnter(Collider other)
@@ -18,7 +17,6 @@ namespace Main.Scripts.Logic
             
             if (other.TryGetComponent<PlayerMove>(out var move))
             {
-                print("Trigger enter");
                 winUi.SetActive(true);
             }
         }
